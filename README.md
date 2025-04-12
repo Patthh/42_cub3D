@@ -1,70 +1,72 @@
-# cub3D
+# 42 cub3D
+<div id="desktop-banner">
+<pre>
+░█████╗░██╗░░░██╗██████╗░██████╗░██████╗░
+██╔══██╗██║░░░██║██╔══██╗╚════██╗██╔══██╗
+██║░░╚═╝██║░░░██║██████╦╝░█████╔╝██║░░██║
+██║░░██╗██║░░░██║██╔══██╗░╚═══██╗██║░░██║
+╚█████╔╝╚██████╔╝██████╦╝██████╔╝██████╔╝
+░╚════╝░░╚═════╝░╚═════╝░╚═════╝░╚═════╝░
+</pre>
+</div>
+## 📖 What is `cub3D` 🎮?
+<details>
+<summary><b>A Wolfenstein 3D-inspired raycasting engine</b></summary><br>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;cub3D is a project associated with the curriculum of École 42, a coding school known for its project-based learning approach.
+The cub3D project uses the C programming language to create a simplified version of the raycasting engine used in games like Wolfenstein 3D.
+The goal of this project is to teach students about graphics programming, mathematical concepts in 3D rendering, and optimization techniques while also assisting them in understanding how early 3D games were developed.
+</p>
+</details>
 
-A Wolfenstein 3D-inspired raycasting engine implemented in C as part of the 42 School curriculum.
+## ✅ Status
+<details>
+<summary><b>Project completion status</b></summary><br>
+<p align="center">
+Completed on : 2025-04-12 <br><br>
+<img src="https://i.ibb.co/your-image-link/image.png" alt="Project Status">
+</p>
+</details>
 
-## Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Controls](#controls)
-- [Map Format](#map-format)
-- [Project Structure](#project-structure)
-- [Technical Implementation](#technical-implementation)
-- [Contributors](#contributors)
-- [Acknowledgements](#acknowledgements)
-
-## Overview
-
-This project is an implementation of a simplified raycasting engine, similar to the one used in Wolfenstein 3D. It creates a 3D-like environment from a 2D map, allowing the player to navigate through corridors and rooms in a first-person perspective.
-
-## Features
-
-- Textured walls with different textures for North, South, East, and West facing walls
-- Smooth movement and rotation
-- Minimap for navigation
-- Collision detection
-- Configurable resolution and textures via configuration file
-- Floor and ceiling colors
-
-## Installation
-
-### Prerequisites
-- GCC compiler
-- Make
-- MinilibX library (included)
-- X11 development libraries (for Linux)
-
-### Build
-Clone the repository and compile using make:
-
-```bash
+## 🚀 Usage
+To clone and compile:
+```shell
 git clone https://github.com/Patthh/42_cub3D.git
-cd 42_cub3D
-make
+cd 42_cub3D && make
 ```
-
-## Usage
-
-Run the program with a map file:
-
-```bash
+To run the game:
+```shell
 ./cub3D maps/map.cub
 ```
 
-## Controls
+## ✨ Features
+- 🎮 First-person 3D-like view using raycasting technology
+- 🖼️ Textured walls with different textures for North, South, East, and West facing walls
+- 🏃‍♂️ Smooth movement and rotation with collision detection
+- 🗺️ Minimap for easier navigation
+- 📝 Configurable resolution and textures via configuration file
+- 🎨 Custom floor and ceiling colors
+- 🖥️ Built with MLX42 graphics library
 
-- `W` - Move forward
-- `S` - Move backward
-- `A` - Strafe left
-- `D` - Strafe right
-- `←` - Rotate camera left
-- `→` - Rotate camera right
-- `ESC` - Exit the game
+## 🕹️ Controls
+<details>
+<summary><b>Game Controls</b></summary><br>
+<p>Here are the controls implemented in cub3D:</p>
 
-## Map Format
+| Key | Action |
+|-----|--------|
+| `W` | Move forward |
+| `S` | Move backward |
+| `A` | Strafe left |
+| `D` | Strafe right |
+| `←` | Rotate camera left |
+| `→` | Rotate camera right |
+| `ESC` | Exit the game |
+</details>
 
-The map must be provided as a `.cub` file with the following format:
+## 🗺️ Map Format
+<details>
+<summary><b>Map Configuration</b></summary><br>
+<p>The map must be provided as a `.cub` file with the following format:</p>
 
 ```
 NO ./path_to_north_texture.png
@@ -87,39 +89,35 @@ C R,G,B    # Ceiling color (RGB values)
 - The map must be surrounded by walls (1)
 - Only one player starting position is allowed (N, S, E, or W)
 - The map can contain spaces but must be rectangular
+</details>
 
-## Project Structure
+> [!NOTE]
+> MLX42 is used instead of minilibX, and PNG files are used for textures instead of XPM.
 
-```
-.
-├── includes/           # Header files
-├── libft/              # Custom C library
-├── maps/               # Map files
-├── mlx/                # MinilibX library
-├── src/                # Source files
-│   ├── init/          # Initialization functions
-│   ├── parse/         # Map parsing
-│   ├── ray/           # Raycasting implementation
-│   ├── render/        # Rendering functions
-│   └── utils/         # Utility functions
-├── textures/           # Wall texture files
-├── Makefile            # Build instructions
-└── README.md           # This file
-```
-
-## Technical Implementation
-
-This raycasting engine implements the following techniques:
+## 🧮 Technical Implementation
+<details>
+<summary><b>Raycasting Engine Details</b></summary><br>
+<p>This raycasting engine implements the following techniques:</p>
 
 - Digital Differential Analysis (DDA) algorithm for ray casting
 - Texture mapping with perspective correction
 - Double buffering for smooth rendering
 - Event-driven input handling
+</details>
 
-## Contributors
+> [!WARNING]
+> "You may question your understanding of 3D mathematics during this project"
 
-- [Patthh](https://github.com/Patthh)
-- [Тони](https://github.com/42Monkey)
+<div align="center">
+  <img src="https://media1.tenor.com/m/your-gif-link/wolfenstein.gif" width="400" alt="This is cub3D">
+  <br>
+  <i>A journey into early 3D game rendering</i><br><br><br>
+</div>
+
+---
+<div align="center">
+  <p>Made with ❤️ and lots of 📐 𝙼𝙰𝚃𝙷</p>
+</div>
   
 ## Acknowledgements
 
