@@ -109,7 +109,7 @@ C R,G,B    # Ceiling color (RGB values)
 > "You may question your understanding of 3D mathematics during this project"
 
 <div align="center">
-  <img src="https://media1.tenor.com/m/your-gif-link/wolfenstein.gif" width="400" alt="This is cub3D">
+  <img src="https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExdXQ4NDZmMmhtYzlqYnFrM2Zkenl1d3J1MGVwcWQ5OHUzd25qODdneSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26BRAfDqmQ0RogLwA/giphy.gif" width="400" alt="This is cub3D">
   <br>
   <i>A journey into early 3D game rendering</i><br><br><br>
 </div>
@@ -121,6 +121,6 @@ C R,G,B    # Ceiling color (RGB values)
   
 ## Acknowledgements
 
-- 42 School for the project requirements and framework(CODAM MLX42)
+- 42 School for the project requirements and framework [(CODAM MLX42)](https://github.com/codam-coding-college/MLX42)
 - ID Software for the original Wolfenstein 3D raycasting concept
 - [Lodev's Raycasting Tutorial](https://lodev.org/cgtutor/raycasting.html) for reference
