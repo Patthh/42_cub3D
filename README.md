@@ -46,6 +46,7 @@ To run the game:
 - 📝 Configurable resolution and textures via configuration file
 - 🎨 Custom floor and ceiling colors
 - 🖥️ Built with MLX42 graphics library
+- 🍀 FPS counter for good lucks
 
 ## 🕹️ Controls
 <details>
